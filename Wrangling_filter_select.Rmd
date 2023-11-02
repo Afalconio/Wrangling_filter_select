@@ -1,7 +1,8 @@
 ---
 title: "Data Wrangling - Part I"
 subtitle: "StatPREP R Workshops"
-author: "Your Name"
+author: "Anthony Falconio"
+Date: "Fall 2023"
 output: html_document
 ---
 
@@ -202,7 +203,9 @@ See if you can answer these questions:
 1. How many movies were released in 1995?
 
 ```{r}
-
+movies_1995 <- movies %>%
+  filter(year== 1995)
+movies
 ```
 
 2. Which Comedies with an MPAA rating, over 120 minutes have a rating above 8?
