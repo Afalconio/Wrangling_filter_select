@@ -230,8 +230,8 @@ movies %>%
 
 ```{r}
 movies %>%
+  filter(votes >= 100 & (Comedy == 1 | Animation == 1)) %>%
   select(title, budget, votes) %>%
-  filter(votes >= 100) %>%
   arrange(desc(budget))
 ```
 
@@ -244,7 +244,7 @@ movies %>%
   arrange(desc(rating))
 ```
 
-
+Yes, my favorite movie was in the data set with the different commands such as 'arrange()' and 'filter()' to specify movies into certain categories such as the highest grossing or the highest rated for example.
 
 
 
